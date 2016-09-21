@@ -1,0 +1,28 @@
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.075); }
+    100% { transform: scale(1); }
+}
+
+@mixin anim-pulse () {
+    animation: pulse 1s infinite both;
+}
+
+@keyframes shake {
+    25% {
+        transform: translate3d(0, 2px, 0);
+    }
+    50% {
+        transform: translate3d(0, 0px, 0);
+    }
+    75% {
+        transform: translate3d(0, -2px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@mixin anim-shake () {
+    animation: shake 0.75s infinite both;
+}

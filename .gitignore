@@ -1,0 +1,8 @@
+/.idea
+/vendor
+/node_modules
+/resources/docs
+/public/page-cache
+/public/storage
+.env
+.env.*

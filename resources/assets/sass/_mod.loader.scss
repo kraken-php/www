@@ -1,0 +1,130 @@
+#preloader
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    z-index: $zindex-loader;
+    border-top: 6px solid $brand-primary;
+}
+#kraken-loader
+{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    text-align: center;
+}
+#bulat-link
+{
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: #000;
+}
+#bulat-link a
+{
+    color: #000;
+    text-decoration: none;
+}
+#bulat
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 110px;
+    -webkit-border-radius: 110px;
+}
+#dalbulat
+{
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 110px;
+    text-align: center;
+    font-size:10px;
+    color:#000;
+    line-height: 40px;
+    z-index: 2;
+}
+#dalbulat img {
+    width: 100%;
+    height: 100%;
+    top: 3px;
+    position: relative;
+}
+#luarbulat
+{
+    margin: 0 auto;
+    background: #ab02ef;
+    background: -webkit-radial-gradient(20% 20%, ellipse cover, #ab02ef 0%, #6b02af 24%, transparent 74%, transparent 100%);
+    background: radial-gradient(ellipse at 20% 20%, #ab02ef 0%, #6b02af 24%, transparent 74%, transparent 100%);
+    border-radius: 110px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

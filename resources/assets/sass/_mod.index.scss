@@ -1,0 +1,154 @@
+.q-chart {
+    position: relative;
+    width: 100%;
+    background: #fbfbfb;
+    border-bottom: 1px dotted #C4C4C4;
+
+    .q-lines,
+    .q-bars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .q-lines {
+        .q-line {
+            position: relative;
+            border-bottom: 1px dotted #C4C4C4;
+        }
+    }
+
+    .q-title {
+        position: absolute;
+        padding-top: $font-size-lg;
+        font-size: $font-size-lg;
+        color: #a0a0a0;
+
+    }
+
+    .q-bars {
+        text-align: center;
+
+        .q-bar {
+            position: relative;
+            display: block;
+            float: left;
+            background: #6b02af;
+            margin-left: 2.4rem;
+        }
+
+        .q-bar p {
+            bottom: -3.6rem;
+            display: block;
+            position: absolute;
+            color: rgb(255, 255, 255);
+            width: 200px;
+            transform: rotate(-90deg);
+            transform-origin: left top 0px;
+            height: 50px;
+            left: 10px;
+            text-align: left;
+            text-shadow: 1px 1px 0 #000;
+        }
+    }
+}
+
+.q-chart-lg {
+    height: ($font-size-lg * 20);
+
+    .q-line {
+        margin-top: ($font-size-lg * 2.75);
+    }
+
+    .q-title,
+    .q-bars {
+        padding-left: ($font-size-lg * 3);
+    }
+}
+
+.x-chart {
+    position: relative;
+    width: 100%;
+    background: #fbfbfb;
+    border-bottom: 1px dotted #C4C4C4;
+
+    .x-lines,
+    .x-bars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .x-lines {
+        .q-line {
+            position: relative;
+            border-bottom: 1px dotted #C4C4C4;
+        }
+    }
+
+    .x-title {
+        position: absolute;
+        padding-top: $font-size-lg;
+        font-size: $font-size-lg;
+        color: #a0a0a0;
+
+    }
+
+    .x-bars {
+        text-align: center;
+
+        .x-bar {
+            position: relative;
+            display: block;
+            background: #6b02af;
+            margin-bottom: 1.2rem;
+        }
+
+        .x-bar p {
+            display: block;
+            position: absolute;
+            color: #fafafa;
+            left: 10px;
+            text-align: left;
+        }
+    }
+}
+
+.x-chart-lg {
+    height: ($font-size-lg * 6);
+
+    .x-line {
+        margin-top: ($font-size-lg * 2.75);
+    }
+
+    .x-title {
+        padding-left: ($font-size-lg * 3);
+    }
+}
+
+.y-chart-lg {
+    color: $brand-primary;
+    display: none;
+}
+
+.y-target-lg {
+    width: 100%;
+    height: ($font-size-lg * 20);
+
+    canvas {
+        display: block;
+    }
+}
+
+.y-target-md {
+    width: 100%;
+    height: ($font-size-lg * 10);
+
+    canvas {
+        display: block;
+    }
+}

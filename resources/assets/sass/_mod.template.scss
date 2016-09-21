@@ -1,0 +1,254 @@
+article {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.section-docs, .section-examples {
+    position: relative;
+    padding-top: 0 !important;
+
+    .container {
+        position: relative;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .sidebar {
+        display: block;
+        width: 300px;
+        border-right: 1px solid darken(#fafafa, 7%);
+    }
+
+    .section-docs article {
+        margin-left: 300px;
+        padding: 75px 0 25px 50px;
+        border-left: 1px solid darken(#fafafa, 7%);
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .sidebar {
+        display: none;
+        width: 100%;
+    }
+
+    .section-docs article {
+        margin-left: 0;
+        padding: 75px 0 25px 0px;
+        border-left: 0;
+    }
+}
+
+.sidebar {
+    float: left;
+    padding: 75px 0 25px 0;
+}
+
+.sidebar .control {
+    border-bottom: 1px solid darken(#fafafa, 7%);
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    cursor: pointer;
+
+    &::before {
+        content: "# ";
+    }
+}
+
+.sidebar > ul {
+    list-style: outside none none;
+    padding: 0;
+}
+
+.sidebar > ul > li {
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.sidebar > ul > li > ul {
+    list-style: outside none none;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar > ul > li > ul  > li {
+    font-weight: 400;
+}
+
+.section-docs article {
+    position: relative;
+    left: -1px;
+    color: #181818;
+}
+
+.section-docs article h1 {
+    color: $gray;
+    font-size: ($font-size-xlg * 2);
+    font-weight: 300;
+    margin-bottom: ($spacer * 3);
+}
+
+.section-docs article h2 {
+    color: $gray-dark;
+    font-size: ($font-size-base * 2);
+    font-weight: 400;
+    margin-bottom: ($spacer * 2);
+}
+
+.section-docs article h2::before {
+    content: "# ";
+    color: $brand-primary;
+}
+
+.section-docs article h3 {
+    color: $gray-darker;
+    font-size: ($font-size-xlg);
+    font-weight: 400;
+    margin: ($spacer * 1.8) 0;
+}
+
+.section-docs article h4 {
+    color: $gray-darker;
+    font-size: ($font-size-base);
+    font-weight: 700;
+    margin: ($spacer * 1.5) 0;
+}
+
+.section-docs article p {
+    line-height: 1.75;
+    margin-top: $spacer * 1.2;
+    margin-bottom: $spacer * 2;
+    text-align: justify;
+}
+
+.section-docs article p > a[name] {
+    position: relative;
+    overflow: hidden;
+    top: -72px;
+    text-decoration: underline;
+}
+
+.section-docs article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-docs article h1 + ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: ($spacer*1.5);
+    list-style: outside none none;
+    font-weight: 700;
+}
+
+.section-docs article h1 + ul li {
+    margin: 0.25rem 0;
+}
+
+.section-docs article h1 + ul li a {
+    text-decoration: none;
+}
+
+.section-docs article h1 + ul li::before {
+    content: "# ";
+    margin-right: 0.25rem;
+    color: #6b02af;
+    opacity: 0.6;
+}
+
+.section-docs article li > ul {
+    font-weight: 400;
+    list-style: outside none none;
+}
+
+.section-docs article h2 a, .section-docs article h2 a:hover {
+    color: $gray-dark;
+    text-decoration: none;
+}
+
+.section-docs article .dot-list {
+    margin-bottom: 4rem;
+}
+
+.section-docs article .dot-list ul li {
+    margin: 0.5rem;
+    line-height: $line-height;
+}
+
+.section-docs article code[class*="language-"], .section-docs article pre[class*="language-"] {
+    font-size: $font-size-xs;
+    line-height: 2;
+    margin: 1rem 0;
+    vertical-align: middle;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.section-docs article blockquote {
+    @include border-radius($border-radius);
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    padding: 1rem;
+    opacity: 0.9;
+
+    &.tip {
+        background: #339928;
+    }
+
+    &.notice {
+        background: #6b32af;
+    }
+
+    &.warning {
+        background: #cc2032;
+    }
+
+    .flag {
+        position: absolute;
+        width: 3rem;
+        left: 1rem;
+        top: 1rem;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        padding-left: 3.5rem;
+    }
+}
+
+.section-docs .btns-left {
+    position: absolute;
+    left: 0;
+    margin-top: 24px;
+    padding-left: 1rem;
+    z-index: $zindex-navbar - 10;
+}
+
+.section-docs .btns-right {
+    position: absolute;
+    right: 0;
+    margin-top: 24px;
+    padding-right: 1rem;
+    z-index: $zindex-navbar - 10;
+}
+
+.section-examples article {
+    margin-top: 3rem;
+}
+
+.section-examples article > p {
+    font-size: $font-size-lg;
+}
+
+.section-examples article > hr {
+    margin-top: $spacer * 2;
+    margin-bottom: $spacer * 2.5;
+}
+
+.section-examples article .card {
+    border: 1px solid $fade-color;
+}

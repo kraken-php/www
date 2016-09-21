@@ -1,0 +1,43 @@
+footer {
+    position: relative;
+    padding: $footer-padding-top $footer-padding-horizontal $footer-padding-bottom $footer-padding-horizontal;
+    @include clearfix;
+
+    @include media-breakpoint-up(sm) {
+        @include border-radius($footer-border-radius);
+    }
+}
+
+.footbar-nav {
+    .nav-item {
+        float: left;
+    }
+
+    .nav-link {
+        display: block;
+        padding-top:    .425rem;
+        padding-bottom: .425rem;
+
+        + .nav-link {
+            margin-left: $footbar-link-margin;
+        }
+    }
+
+    .nav-item + .nav-item {
+        margin-left: $footbar-link-margin;
+    }
+}
+
+.footbar-menu {
+    @extend .navbar-menu;
+}
+
+#farewell {
+    background: #181818;
+    color: #c0c0c0;
+    border-top: 0.5rem solid #8002ac;
+
+    hr {
+        border-color: darken(#c0c0c0, 60%);
+    }
+}

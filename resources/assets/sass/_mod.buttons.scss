@@ -1,0 +1,25 @@
+.btn {
+    font-family: $font-family-heading;
+}
+
+.btn-intro {
+    @include button-variant($btn-intro-color, $btn-intro-bg, $btn-intro-border);
+    @include hover-focus {
+        background: darken($btn-intro-bg, 2%);
+    }
+}
+
+.btn-next {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: block;
+    font-size: $font-size-xlg;
+    color: $btn-intro-color;
+    text-align: center;
+}
+
+.btn-xlg {
+    @include button-size($btn-padding-y-xlg, $btn-padding-x-xlg, $font-size-xlg, $btn-border-radius-xlg);
+}
