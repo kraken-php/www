@@ -149,7 +149,7 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <p class="section-text">
-                            Start writing applications that were previously marked as impossible or hard to implement in PHP right know. Servers, service-oriented architecture, agent-based models, games, complex daemons, socket programs, schedulers and much, much more - nothing is impossible with Kraken!
+                            Start writing applications that were previously marked as impossible or hard to implement in PHP right now. Servers, service-oriented architecture, agent-based models, games, complex daemons, socket programs, schedulers and much, much more - nothing is impossible with Kraken!
                         </p>
                     </div>
                 </div>
@@ -511,7 +511,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h4>Everything is possible. The impossible just take longer.</h4>
+                        <h4>Everything is possible. The impossible just takes longer.</h4>
                     </div>
                 </div>
             </div>
