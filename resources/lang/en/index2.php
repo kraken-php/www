@@ -2,7 +2,7 @@
 
 return [
     'info_text' => 'Kraken is the first and only multi-processed, multi-threaded, fault-tolerant framework for PHP. It has been written to provide easy and reliable API for creating distributed applications using PHP. Kraken aims to solve typical problems of writing such applications and to provide developers with powerful yet elegant tools for dealing with them.',
-    'info_desc' => 'Start writing applications that were previously marked as impossible or hard to implement in PHP right know! Servers, service-oriented architecture, agent-based models, games, complex daemons, socket programs, schedulers and much, much more - nothing is impossible with Kraken!',
+    'info_desc' => 'Start writing applications that were previously marked as impossible or hard to implement in PHP right now! Servers, service-oriented architecture, agent-based models, games, complex daemons, socket programs, schedulers and much, much more - nothing is impossible with Kraken!',
 
     'design_title1' => 'Concurrent',
     'design_desc1'  => 'Create systems that are <a>asynchronous</a> and <a>concurrent</a> by design.',
