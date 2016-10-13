@@ -64,7 +64,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link primary-link" href="https://www.patreon.com/kraken_php">
-                                    <i class="fa fa-paypal" aria-hidden="true"></i>
+                                    <i class="fa fa-usd" aria-hidden="true"></i>
                                     Donate
                                 </a>
                             </li>
@@ -546,7 +546,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link primary-link" href="https://www.patreon.com/kraken_php">
-                                    <i class="fa fa-paypal" aria-hidden="true"></i>
+                                    <i class="fa fa-usd" aria-hidden="true"></i>
                                     Donate
                                 </a>
                             </li>
