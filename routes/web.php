@@ -3,7 +3,7 @@
 /**
  * Set current documentation version.
  */
-define('DEFAULT_VERSION', '0.3');
+define('DEFAULT_VERSION', '0.4');
 
 function markdown($text)
 {

@@ -94,7 +94,7 @@
                     <div id="intro-details" class="vcenter">
                         <h1 id="intro-name">Kraken</h1>
                         <h3 id="intro-text">Distributed & Async PHP Framework</h3>
-                        <p id="intro-shorts">Version 0.3.0 · <a href="https://github.com/kraken-php/framework">GitHub Project</a> · <a href="/docs">Docs</a> · <a href="https://github.com/kraken-php/framework/issues">Issues</a>  · Created by <a href="https://github.com/khelle">Kamil Jamróz</a></p>
+                        <p id="intro-shorts">Version 0.4 · <a href="https://github.com/kraken-php/framework">GitHub Project</a> · <a href="/docs">Docs</a> · <a href="https://github.com/kraken-php/framework/issues">Issues</a>  · Created by <a href="https://github.com/khelle">Kamil Jamróz</a></p>
                         <div id="intro-btns">
                             <a class="btn btn-intro btn-lg" href="https://github.com/kraken-php/framework/releases">
                                 <i class="fa fa-download" aria-hidden="true"></i>
